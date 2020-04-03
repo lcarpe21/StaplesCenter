@@ -44,7 +44,6 @@ a:active {
 }
 
 //User Selected Colors
-  {
     //Change the Users Background Color
     //background-color: <%= @profile.background_color %>
     
@@ -54,4 +53,3 @@ a:active {
     //Set-Up Link for Stylesheet to be linked to Usser Profile
     //<% content_for :stylesheet_includes do %>
     //<%= stylesheet_link_tag(profile_path(@user, format: :css)) %>
-  }
