@@ -1,7 +1,55 @@
 // Place all the styles related to the Welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1 {
+//Bodoni Italic is the Font Used by the Loss Angelos Lakers
+//Colors Are Set To Lakers Colors
+
+h1 
+  {
+  font-family: Bodoni Italic;
   font-size: 32px;
-  color: blue;
+  color: #FDB927;
+  }
+
+body
+  {
+    background: #552583;
+  }
+  
+p
+  {
+    font-family: arial;
+    color: #FDB927
+  }
+  
+  
+a:link {
+  color: #FDB927;
+  font-family: Bodoni Italic;
 }
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: DarkOrchid;
+}
+
+/* selected link */
+a:active {
+  color: DarkGoldenRod;
+}
+
+//User Selected Colors
+    //Change the Users Background Color
+    //background-color: <%= @profile.background_color %>
+    
+    //Change the Users font Color
+    //color: <%= @profile.foreground_color %>
+    
+    //Set-Up Link for Stylesheet to be linked to Usser Profile
+    //<% content_for :stylesheet_includes do %>
+    //<%= stylesheet_link_tag(profile_path(@user, format: :css)) %>
