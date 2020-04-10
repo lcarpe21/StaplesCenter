@@ -30,6 +30,10 @@ When("I fill in the Body field with I edited this") do
   fill_in('Body', :with => 'I edited this')
 end
 
+When("I fill in the Text field with I edited an article") do
+  fill_in('Text', :with => 'I edited an article')
+end
+
 Then("I should be on the {string} page") do |string|
   expect(page).to have_content(string)
 end
