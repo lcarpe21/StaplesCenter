@@ -20,9 +20,12 @@
     <strong>Comment:</strong>
     <%= comment.body %>
   </p>
+       <p><%= link_to 'Edit', edit_article_comment_path(comment.article, comment) %>
+      <%= link_to 'Destroy', article_comment_path(comment.article, comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
 <% end %>
 
 <h2>Add a comment:</h2>
+
 <%= form_for([@article, @article.comments.build]) do |f| %>
   <p>
     <%= f.label :commenter %><br>
