@@ -21,7 +21,7 @@ feature "Blogger adds an article" do
     end
 end
 
-feature "Blogger adds a comment after creating article" do
+feature "Blogger adds a comment" do
     scenario "Blogger successfully navigates to the new articles page from the listing articles page" do
         visit articles_path
         expect(page).to have_content("Listing articles")
@@ -31,7 +31,7 @@ feature "Blogger adds a comment after creating article" do
         expect(page).to have_field("Text")
     end
     
-    scenario "Blogger successfully creates a new article" do
+    scenario "Blogger successfully creates a new article then adds a comment" do
         visit new_article_path
         expect(page).to have_content("New Article")
         fill_in "Title", with: "New Capybara Article"
@@ -39,5 +39,12 @@ feature "Blogger adds a comment after creating article" do
         click_button "Create Article"
         expect(page).to have_content("New Capybara Article")
         expect(page).to have_content("This is a new Capybara article")
+        expect(page).to have_field("Commenter")
+        expect(page).to have_field("Body")
+        fill_in "Commenter", with: "Levar Fredericks"
+        fill_in "Body", with: "This is a comment."
+        click_button "Create Comment"
+        expect(page).to have_content("Levar Fredericks")
+        expect(page).to have_content("This is a comment.")
     end
 end
