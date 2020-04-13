@@ -10,18 +10,11 @@
 
 
 <h2>Comments</h2>
-<% @article.comments.each do |comment| %>
-  <p>
-    <strong>Commenter:</strong>
-    <%= comment.commenter %>
-  </p>
- 
-  <p>
-    <strong>Comment:</strong>
-    <%= comment.body %>
-  </p>
+<% render @article.comments %>
+  
        <p><%= link_to 'Edit', edit_article_comment_path(comment.article, comment) %>
-      <%= link_to 'Destroy', article_comment_path(comment.article, comment), method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      <%= link_to 'Destroy', article_comment_path(comment.article, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+      </p>
 <% end %>
 
 <h2>Add a comment:</h2>
