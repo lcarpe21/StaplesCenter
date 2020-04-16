@@ -3,12 +3,90 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 //Bodoni Italic is the Font Used by the Loss Angelos Lakers
 //Colors Are Set To Lakers Colors
+input[type=text]
+{
+    font-family: Verdana;
+    width: 15%;
+    padding: 5px 5px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    height: 18px;
+}
 
-h1 
+label
+{
+    font-size: 20px;
+    font-family: Verdana;
+    color: #FDB927;
+}
+
+input[type=password]
+{
+    font-family: Verdana;
+    width: 15%;
+    padding: 5px 5px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    height: 18px;
+}
+
+textarea 
+{
+    font-family: Verdana;
+    width: 20%;
+    height: 100px;
+    padding: 5px 5px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    resize: none;
+}
+
+input[type=button], input[type=submit]
+{
+    font-family: Verdana;
+    background-color: #552583;
+    float: left;
+    font-size: 22px;
+    border: 1px solid goldenrod;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+//Bodoni Italic is the Font Used by the Loss Angelos Lakers
+//Colors Are Set To Lakers Colors
+
+
+h1
   {
-  font-family: Bodoni Italic;
+  font-family: Verdana;
   font-size: 32px;
   color: #FDB927;
+  }
+
+td
+  {
+    font-family: Verdana;
+    font-size: 20px;
+    color: #FDB927;
+    text-align: center;
+    border-bottom: 1px solid goldenrod;
+  }
+  
+th
+{
+    font-family: Verdana;
+    font-size: 20px;
+    color: #FDB927;
+    height: 30px;
+}
+  
+table
+  {
+    border: 1px solid #FDB927;
+    width: 60%;
   }
 
 body
@@ -18,29 +96,65 @@ body
   
 p
   {
-    font-family: arial;
-    color: #FDB927
+    font-size: 20px;
+    font-family: Verdana;
+    color: #FDB927;
   }
   
   
-a:link {
-  color: #FDB927;
-  font-family: Bodoni Italic;
+a:link 
+{
+    font-family: Verdana;
+    background-color: #552583;
+    float: left;
+    border: 1px solid goldenrod;
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 /* visited link */
-a:visited {
-  color: white;
+a:visited 
+{
+  font-family: Verdana;
+    background-color: #552583;
+    float: left;
+    border: 1px solid goldenrod;
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 /* mouse over link */
-a:hover {
-  color: DarkOrchid;
+a:hover 
+{
+  font-family: Verdana;
+    background-color: #552583;
+    float: left;
+    border: 1px solid goldenrod;
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 /* selected link */
-a:active {
-  color: DarkGoldenRod;
+a:active 
+{
+  font-family: Verdana;
+    background-color: #552583;
+    float: left;
+    border: 1px solid goldenrod;
+    color: white;
+    padding: 6px 10px;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 //User Selected Colors

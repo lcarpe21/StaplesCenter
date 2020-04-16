@@ -5,7 +5,10 @@ class ArticlesController < ApplicationController
     end
         
     def show
-    @article = Article.find(params[:id])
+        @article = Article.find(params[:id])
+        @article.view ||= 0
+        abc = @article.view += 1
+        @article.update_attribute "view", abc
     end
 
     def new
@@ -14,6 +17,7 @@ class ArticlesController < ApplicationController
     
     def create
         @article = Article.new(article_params)
+        @article.user = current_user
         
         if @article.save
     
