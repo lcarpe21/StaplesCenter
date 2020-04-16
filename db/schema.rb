@@ -10,23 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20200416174800) do
-=======
-ActiveRecord::Schema.define(version: 20200415205428) do
->>>>>>> 13671860b6c7b8cca16852f093a32b2e432befc6
 
   create_table "articles", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-<<<<<<< HEAD
     t.integer  "view"
-=======
     t.integer  "user_id"
     t.index ["user_id"], name: "index_articles_on_user_id"
->>>>>>> 13671860b6c7b8cca16852f093a32b2e432befc6
   end
 
   create_table "comments", force: :cascade do |t|
