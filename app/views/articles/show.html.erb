@@ -7,10 +7,19 @@
     <strong>Text:</strong>
     <%= @article.text %>
 </p>
+<%= social_share_button_tag(@article.title,
+                    :image => "https://raw.github.com/vkulpa/social-share-button/master/lib/assets/images/sprites/social-share-button/tumblr.png",
+                    :'data-type' => 'photo',
+                    :url => "https://9685e9247ad04c1dbc0951361b0a24b1.vfs.cloud9.us-east-2.amazonaws.com/articles/1#",
+                    :'data-source' => "https://raw.github.com/vkulpa/social-share-button/master/lib/assets/images/sprites/social-share-button/tumblr.png", :'data-type' => 'photo',) %>
 
+
+<br/><br/>
 
 <h2>Comments</h2>
 <%= render @article.comments %>
+
+<br/><br/><br/><br/><br/>
 
 <h2>Add a comment:</h2>
 
