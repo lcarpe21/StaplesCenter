@@ -16,7 +16,8 @@ class User < ApplicationRecord
         
     validates :password,
         presence: true,
-        length: { minimum: 6 }
+        length: { minimum: 6 },
+        :format => {:with => /\A(?=.*[a-zA-Z])(?=.*[0-9]).{6,}\Z/, message: "must be at least 6 characters and include one number and one letter."}
         
     has_secure_password
 end
