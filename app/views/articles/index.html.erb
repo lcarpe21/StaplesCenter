@@ -19,7 +19,9 @@
     <th>Title</th>
     <th>Text</th>
     <th>Author</th>
+    <th>Posted</th>
     <th>Views</th>
+    
 
   </tr>
      <%@articles.each_with_index do |article, index| %>
@@ -33,6 +35,8 @@
             <%= article.user.name %>
           <% end %>
       </td>
+        
+      <td><%= article.created_at %></td>
 
       <td><%= article.view %></td>
 
