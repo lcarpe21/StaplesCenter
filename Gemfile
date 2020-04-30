@@ -26,6 +26,10 @@ gem 'jbuilder', '~> 2.5'
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
+#adding paperclip for pictures uploads
+gem 'paperclip'
+#adding shrine to attatch photos
+gem 'shrine', '~> 3.0'
 
 gem 'social-share-button'
 

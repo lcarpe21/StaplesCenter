@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'about_us/index'
+
   get 'sessions/new'
 
   get 'sessions/create'
@@ -18,6 +20,9 @@ Rails.application.routes.draw do
   end
   
   root 'welcome#index'
+  
+  root to: "photos#index"
+  resources :photos
   
   
 
