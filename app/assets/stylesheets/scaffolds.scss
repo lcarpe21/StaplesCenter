@@ -2,35 +2,18 @@ input[type=text]
 {
     font-family: Verdana;
     width: 15%;
-    padding: 5px 5px;
+    padding: 12px 12px;
     border: 2px solid #ccc;
     background-color: #f8f8f8;
-    height: 18px;
-}
-
-label
-{
-    font-size: 20px;
-    font-family: Verdana;
-    color: #FDB927;
-}
-
-input[type=password]
-{
-    font-family: Verdana;
-    width: 15%;
-    padding: 5px 5px;
-    border: 2px solid #ccc;
-    background-color: #f8f8f8;
-    height: 18px;
+    height: 22px;
 }
 
 textarea 
 {
     font-family: Verdana;
     width: 20%;
-    height: 100px;
-    padding: 5px 5px;
+    height: 200px;
+    padding: 12px 12px;
     border: 2px solid #ccc;
     background-color: #f8f8f8;
     resize: none;
@@ -41,27 +24,22 @@ input[type=button], input[type=submit]
     font-family: Verdana;
     background-color: #552583;
     float: left;
-    font-size: 22px;
+    font-size: 20px;
     border: 1px solid goldenrod;
     color: white;
-    padding: 5px;
+    padding: 6px 10px;
     text-decoration: none;
     cursor: pointer;
     border-radius: 8px;
 }
 
+//Bodoni Italic is the Font Used by the Loss Angelos Lakers
+//Colors Are Set To Lakers Colors
 
 h1
   {
   font-family: Verdana;
   font-size: 32px;
-  color: #FDB927;
-  }
-  
-h2
-  {
-  font-family: Verdana;
-  font-size: 26px;
   color: #FDB927;
   }
 
@@ -70,8 +48,7 @@ td
     font-family: Verdana;
     font-size: 20px;
     color: #FDB927;
-    text-align: center;
-    border-bottom: 1px solid goldenrod;
+    text-align: left;
   }
   
 th
@@ -85,7 +62,7 @@ th
 table
   {
     border: 1px solid #FDB927;
-    width: 100%;
+    width: 60%;
   }
 
 body
@@ -100,17 +77,10 @@ p
     color: #FDB927;
   }
   
-li
-  {
-    font-size: 20px;
-    font-family: Verdana;
-    color: #FDB927;
-  }
-  
   
 a:link 
 {
-    font-family: Verdana;
+  font-family: Verdana;
     background-color: #552583;
     float: left;
     border: 1px solid goldenrod;
@@ -162,5 +132,3 @@ a:active
     cursor: pointer;
     border-radius: 8px;
 }
-
-@import "social-share-button";
