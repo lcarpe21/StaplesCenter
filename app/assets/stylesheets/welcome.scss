@@ -1,8 +1,3 @@
-// Place all the styles related to the Welcome controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
-//Bodoni Italic is the Font Used by the Loss Angelos Lakers
-//Colors Are Set To Lakers Colors
 input[type=text]
 {
     font-family: Verdana;
@@ -55,14 +50,18 @@ input[type=button], input[type=submit]
     border-radius: 8px;
 }
 
-//Bodoni Italic is the Font Used by the Loss Angelos Lakers
-//Colors Are Set To Lakers Colors
-
 
 h1
   {
   font-family: Verdana;
   font-size: 32px;
+  color: #FDB927;
+  }
+  
+h2
+  {
+  font-family: Verdana;
+  font-size: 26px;
   color: #FDB927;
   }
 
@@ -86,7 +85,7 @@ th
 table
   {
     border: 1px solid #FDB927;
-    width: 60%;
+    width: 100%;
   }
 
 body
@@ -95,6 +94,13 @@ body
   }
   
 p
+  {
+    font-size: 20px;
+    font-family: Verdana;
+    color: #FDB927;
+  }
+  
+li
   {
     font-size: 20px;
     font-family: Verdana;
@@ -157,13 +163,4 @@ a:active
     border-radius: 8px;
 }
 
-//User Selected Colors
-    //Change the Users Background Color
-    //background-color: <%= @profile.background_color %>
-    
-    //Change the Users font Color
-    //color: <%= @profile.foreground_color %>
-    
-    //Set-Up Link for Stylesheet to be linked to Usser Profile
-    //<% content_for :stylesheet_includes do %>
-    //<%= stylesheet_link_tag(profile_path(@user, format: :css)) %>
+@import "social-share-button";
