@@ -15,6 +15,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
+gem 'social-share-button'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -30,8 +31,6 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'paperclip'
 #adding shrine to attatch photos
 gem 'shrine', '~> 3.0'
-
-gem 'social-share-button'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
