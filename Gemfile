@@ -32,8 +32,6 @@ gem 'paperclip'
 #adding shrine to attatch photos
 gem 'shrine', '~> 3.0'
 
-gem 'social-share-button'
-
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

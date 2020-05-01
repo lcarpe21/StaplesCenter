@@ -11,8 +11,7 @@
 
 <%= link_to 'Back', root_path %>
 
-<br />
-<br />
+
 
 
 <table>
@@ -21,7 +20,6 @@
     <th>Text</th>
     <th>Author</th>
     <th>Views</th>
-    <th>Date Created</th>
 
   </tr>
      <%@articles.each_with_index do |article, index| %>
@@ -31,10 +29,15 @@
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><% if article.user %><%= article.user.name %><% end %></td>
+      <td><% if article.user %>
+            <%= article.user.name %>
+          <% end %>
+      </td>
+
       <td><%= article.view %></td>
-      <td><%= article.created_at %></td>
-      
+
+
+
       <td><%= link_to 'Show', article_path(article) %></td>
       <td><%= link_to 'Edit', edit_article_path(article) %></td>
       <td><%= link_to 'Destroy',
