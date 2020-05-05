@@ -109,6 +109,8 @@ a:active
   font-family: Verdana;
 }
 
+@import "social-share-button";
+
 //User Selected Colors
     //Change the Users Background Color
     //background-color: <%= @profile.background_color %>
