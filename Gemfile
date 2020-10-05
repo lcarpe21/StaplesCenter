@@ -30,7 +30,7 @@ gem 'bcrypt', '~> 3.1.7'
 #adding paperclip for pictures uploads
 gem 'paperclip'
 #adding shrine to attatch photos
-gem 'shrine', '~> 3.0'
+gem 'shrine', '~> 3.3'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
